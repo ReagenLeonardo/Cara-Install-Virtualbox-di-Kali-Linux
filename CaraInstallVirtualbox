@@ -1,0 +1,23 @@
+cara install virtualbox di kali linux :
+
+apt-get update
+
+apt full-upgrade -y
+
+reboot
+
+
+apt install linux-headers-$(uname -r | sed 's,[^-]*-[^-]*-,,')
+
+
+apt install linux-image-$(uname -r | sed 's,[^-]*-[^-]*-,,')
+
+reboot
+
+
+apt install build-essential dkms
+
+apt install virtualbox virtualbox ext-pack
+
+
+virtualbox
